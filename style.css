@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo general de la tienda */
+.card {
+    margin: 10px;
+    width: 150px;
+    height: 300px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card__img img {
+    width: 80%;
+}
+
+.card__img {
+    width: 90%;
+    height: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.productos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bto {
+    outline: none;
+    background-color: rgb(57, 57, 57);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bto:hover {
+    background-color: rgb(105, 105, 105);
+    transform: scale(1.1);
+}
+
+.contenedorBotones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.carrito {
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#totalCompra {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: green;
+}
+
+#listaCompra {
+    margin-bottom: 20px;
+    list-style: none;
+}
